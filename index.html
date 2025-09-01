@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Handcrafted birdhouses made from recycled wood in New England. Eco-friendly, safe for birds, and beautiful additions to any yard. Custom-made to order."
+    />
+    <meta
+      name="keywords"
+      content="handmade birdhouses, eco-friendly birdhouses, recycled wood birdhouses, New England crafts, custom birdhouses, bird habitat, garden decor, wildlife conservation, sustainable birdhouses, bird sanctuary"
+    />
+    <meta name="author" content="Handmade Birdhouses of New England" />
+    <meta
+      property="og:title"
+      content="Handmade Birdhouses of New England | Eco-Friendly Bird Habitats"
+    />
+    <meta
+      property="og:description"
+      content="Beautiful, custom-made birdhouses from recycled wood. Safe for birds and perfect for your yard. Supporting local wildlife and conservation efforts."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://handmadebirdhouses-newengland.com"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Handmade Birdhouses of New England" />
+    <meta
+      name="twitter:description"
+      content="Eco-friendly birdhouses made from recycled wood. Custom designs for your feathered friends."
+    />
+    <link rel="canonical" href="https://handmadebirdhouses-newengland.com" />
+    <title>
+      Handmade Birdhouses of New England | Eco-Friendly Bird Habitats
+    </title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary-green: #4a7c59;
+        --secondary-green: #7fb069;
+        --accent-blue: #5d8aa8;
+        --light-brown: #d2b48c;
+        --dark-brown: #6d4c3d;
+        --cream: #f8f5f0;
+        --white: #ffffff;
+        --text-dark: #333333;
+        --text-light: #555555;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: var(--text-dark);
+        background-color: var(--cream);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary-green);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo i {
+        margin-right: 10px;
+        color: var(--accent-blue);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary-green);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--accent-blue);
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .mobile-menu {
+        display: none;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80")
+            no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: var(--white);
+        padding-top: 80px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        animation: fadeInUp 1s ease;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-green);
+        color: var(--white);
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        background-color: var(--secondary-green);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        border: 2px solid var(--white);
+        margin-left: 15px;
+      }
+
+      .btn-outline:hover {
+        background-color: var(--white);
+        color: var(--primary-green);
+      }
+
+      /* About Section */
+      .about {
+        padding: 100px 0;
+        background-color: var(--white);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--primary-green);
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: var(--accent-blue);
+        bottom: -10px;
+        left: 25%;
+      }
+
+      .section-title p {
+        color: var(--text-light);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-text h3 {
+        font-size: 1.8rem;
+        color: var(--dark-brown);
+        margin-bottom: 20px;
+      }
+
+      .about-text p {
+        margin-bottom: 20px;
+        color: var(--text-light);
+      }
+
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      .about-image:hover img {
+        transform: scale(1.05);
+      }
+
+      .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .benefit-card {
+        flex: 1;
+        min-width: 250px;
+        background-color: var(--cream);
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .benefit-card i {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 15px;
+      }
+
+      .benefit-card h4 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        color: var(--primary-green);
+      }
+
+      /* Birdhouses Section */
+      .birdhouses {
+        padding: 100px 0;
+        background-color: var(--cream);
+      }
+
+      .birdhouse-options {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .birdhouse-card {
+        background-color: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .birdhouse-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .birdhouse-image {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .birdhouse-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .birdhouse-card:hover .birdhouse-image img {
+        transform: scale(1.1);
+      }
+
+      .birdhouse-info {
+        padding: 25px;
+      }
+
+      .birdhouse-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--primary-green);
+      }
+
+      .birdhouse-info p {
+        color: var(--text-light);
+        margin-bottom: 15px;
+      }
+
+      .birdhouse-info .price {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--dark-brown);
+        margin-bottom: 15px;
+      }
+
+      .birdhouse-info .dimensions {
+        display: flex;
+        align-items: center;
+        color: var(--text-light);
+        margin-bottom: 15px;
+      }
+
+      .birdhouse-info .dimensions i {
+        margin-right: 8px;
+        color: var(--accent-blue);
+      }
+
+      /* Order Form Section */
+      .order-form {
+        padding: 100px 0;
+        background-color: var(--white);
+      }
+
+      .form-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: var(--cream);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--text-dark);
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--accent-blue);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .form-row .form-group {
+        flex: 1;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 100px 0;
+        background-color: var(--primary-green);
+        color: var(--white);
+      }
+
+      .contact .section-title h2 {
+        color: var(--white);
+      }
+
+      .contact .section-title h2::after {
+        background-color: var(--light-brown);
+      }
+
+      .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .contact-info h3 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-item i {
+        font-size: 1.5rem;
+        margin-right: 15px;
+        color: var(--light-brown);
+      }
+
+      .contact-form {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: var(--white);
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--dark-brown);
+        color: var(--white);
+        padding: 50px 0 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      .footer-logo {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 30px;
+      }
+
+      .footer-logo h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+
+      .footer-logo p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .footer-links {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 30px;
+      }
+
+      .footer-links h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer-links h4::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: var(--accent-blue);
+        bottom: 0;
+        left: 0;
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: var(--white);
+      }
+
+      .footer-social {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 30px;
+      }
+
+      .footer-social h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer-social h4::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: var(--accent-blue);
+        bottom: 0;
+        left: 0;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: var(--white);
+        transition: all 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        background-color: var(--accent-blue);
+        transform: translateY(-5px);
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9rem;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        transition: all 0.8s ease;
+      }
+
+      .js .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        .hero h1 {
+          font-size: 2.8rem;
+        }
+
+        .section-title h2 {
+          font-size: 2.2rem;
+        }
+
+        .about-content {
+          flex-direction: column;
+        }
+
+        .contact-content {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 70%;
+          height: 100vh;
+          background-color: var(--white);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: right 0.5s ease;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links.active {
+          right: 0;
+        }
+
+        .nav-links li {
+          margin: 15px 0;
+        }
+
+        .mobile-menu {
+          display: block;
+          font-size: 1.5rem;
+          color: var(--primary-green);
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .btn-outline {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+
+        .form-row {
+          flex-direction: column;
+        }
+
+        .form-actions {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+
+        .section-title h2 {
+          font-size: 1.8rem;
+        }
+
+        .birdhouse-options {
+          grid-template-columns: 1fr;
+        }
+
+        .benefits {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">
+          <i class="fas fa-home"></i>
+          New England Birdhouses
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#birdhouses">Birdhouses</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Handcrafted Birdhouses for New England Wildlife</h1>
+        <p>
+          Beautiful, eco-friendly birdhouses made from recycled wood. Each piece
+          is custom-made to order, providing a safe haven for birds in your
+          yard.
+        </p>
+        <a href="#birdhouses" class="btn">Explore Birdhouses</a>
+        <a href="#order" class="btn btn-outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Our Story</h2>
+          <p>
+            Nestled in the heart of New England, we create beautiful, functional
+            birdhouses from recycled materials.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <h3>Crafting Homes for Our Feathered Friends</h3>
+            <p>
+              Here in New England, we understand the importance of preserving
+              our natural habitats. That's why we create beautiful, functional
+              birdhouses from recycled wood, ensuring each piece is not only
+              environmentally friendly but also safe for birds and other small
+              critters.
+            </p>
+            <p>
+              Our birdhouses are designed to blend seamlessly with your outdoor
+              space while providing essential shelter for local bird
+              populations. Each piece is handcrafted with care, attention to
+              detail, and a deep respect for nature.
+            </p>
+
+            <div class="benefits">
+              <div class="benefit-card fade-in">
+                <i class="fas fa-leaf"></i>
+                <h4>Eco-Friendly</h4>
+                <p>
+                  Made from 100% recycled wood, reducing waste and environmental
+                  impact.
+                </p>
+              </div>
+              <div class="benefit-card fade-in">
+                <i class="fas fa-home"></i>
+                <h4>Safe Haven</h4>
+                <p>
+                  Designed with bird safety in mind, providing secure nesting
+                  spaces.
+                </p>
+              </div>
+              <div class="benefit-card fade-in">
+                <i class="fas fa-tree"></i>
+                <h4>Supports Ecosystem</h4>
+                <p>
+                  Helps maintain healthy bird populations that benefit your
+                  local environment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Birdhouse in a tree"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birdhouses Section -->
+    <section id="birdhouses" class="birdhouses">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Our Birdhouse Collection</h2>
+          <p>
+            Each birdhouse is handcrafted to order using recycled wood. Choose
+            the perfect size for your feathered visitors.
+          </p>
+        </div>
+
+        <div class="birdhouse-options">
+          <div class="birdhouse-card fade-in">
+            <div class="birdhouse-image">
+              <img
+                src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Small Birdhouse"
+              />
+            </div>
+            <div class="birdhouse-info">
+              <h3>Small Birdhouse</h3>
+              <p>Perfect for small songbirds like chickadees and wrens.</p>
+              <div class="price">$45</div>
+              <div class="dimensions">
+                <i class="fas fa-ruler-combined"></i>
+                <span>6" W x 8" H x 6" D</span>
+              </div>
+              <a href="#order" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="birdhouse-card fade-in">
+            <div class="birdhouse-image">
+              <img
+                src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Medium Birdhouse"
+              />
+            </div>
+            <div class="birdhouse-info">
+              <h3>Medium Birdhouse</h3>
+              <p>Ideal for finches, sparrows, and other medium-sized birds.</p>
+              <div class="price">$65</div>
+              <div class="dimensions">
+                <i class="fas fa-ruler-combined"></i>
+                <span>8" W x 10" H x 8" D</span>
+              </div>
+              <a href="#order" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="birdhouse-card fade-in">
+            <div class="birdhouse-image">
+              <img
+                src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Large Birdhouse"
+              />
+            </div>
+            <div class="birdhouse-info">
+              <h3>Large Birdhouse</h3>
+              <p>Great for bluebirds, swallows, and similar-sized birds.</p>
+              <div class="price">$85</div>
+              <div class="dimensions">
+                <i class="fas fa-ruler-combined"></i>
+                <span>10" W x 12" H x 10" D</span>
+              </div>
+              <a href="#order" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="birdhouse-card fade-in">
+            <div class="birdhouse-image">
+              <img
+                src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Extra Large Birdhouse"
+              />
+            </div>
+            <div class="birdhouse-info">
+              <h3>Extra Large Birdhouse</h3>
+              <p>Perfect for larger birds like woodpeckers and flickers.</p>
+              <div class="price">$105</div>
+              <div class="dimensions">
+                <i class="fas fa-ruler-combined"></i>
+                <span>12" W x 14" H x 12" D</span>
+              </div>
+              <a href="#order" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="birdhouse-card fade-in">
+            <div class="birdhouse-image">
+              <img
+                src="https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Deluxe Birdhouse"
+              />
+            </div>
+            <div class="birdhouse-info">
+              <h3>Deluxe Birdhouse</h3>
+              <p>
+                Our premium option with decorative elements and extra features.
+              </p>
+              <div class="price">$135</div>
+              <div class="dimensions">
+                <i class="fas fa-ruler-combined"></i>
+                <span>14" W x 16" H x 14" D</span>
+              </div>
+              <a href="#order" class="btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-form">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Order Your Custom Birdhouse</h2>
+          <p>
+            Fill out the form below to place your order. All birdhouses are
+            handcrafted to order.
+          </p>
+        </div>
+
+        <div class="form-container fade-in">
+          <form id="birdhouseOrderForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="birdhouseSize">Birdhouse Size</label>
+              <select id="birdhouseSize" name="birdhouseSize" required>
+                <option value="">Select a size</option>
+                <option value="small">Small - $45</option>
+                <option value="medium">Medium - $65</option>
+                <option value="large">Large - $85</option>
+                <option value="xlarge">Extra Large - $105</option>
+                <option value="deluxe">Deluxe - $135</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="specialRequests">Special Requests</label>
+              <textarea
+                id="specialRequests"
+                name="specialRequests"
+                placeholder="Any specific colors, designs, or features you'd like?"
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Submit Order</button>
+              <button type="button" id="downloadForm" class="btn btn-outline">
+                Download Form
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Get In Touch</h2>
+          <p>
+            Have questions about our birdhouses? We'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info fade-in">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Forest Road, Burlington, VT 05401</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>(802) 555-0123</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@newenglandbirdhouses.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Monday-Friday: 9am-5pm</span>
+            </div>
+          </div>
+
+          <div class="contact-form fade-in">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>New England Birdhouses</h3>
+            <p>Creating beautiful, eco-friendly homes for birds since 2010.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#birdhouses">Birdhouses</a></li>
+              <li><a href="#order">Order</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 New England Birdhouses. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Wait for DOM to be fully loaded before running JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (mobileMenu && navLinks) {
+          mobileMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+
+          // Close mobile menu when clicking on a link
+          const navItems = navLinks.querySelectorAll("a");
+          navItems.forEach((link) => {
+            link.addEventListener("click", () => {
+              navLinks.classList.remove("active");
+            });
+          });
+        }
+
+        // Smooth scrolling for anchor links
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll(".fade-in");
+
+        const fadeInOnScroll = () => {
+          fadeElements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+
+            if (elementTop < window.innerHeight && elementBottom > 0) {
+              element.classList.add("visible");
+            }
+          });
+        };
+
+        // Initial check for fade-in elements
+        fadeInOnScroll();
+
+        // Add scroll event listener
+        window.addEventListener("scroll", fadeInOnScroll);
+
+        // Form submission handlers
+        const birdhouseOrderForm =
+          document.getElementById("birdhouseOrderForm");
+        const contactForm = document.getElementById("contactForm");
+
+        if (birdhouseOrderForm) {
+          birdhouseOrderForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Show success message
+            const successMessage = document.createElement("div");
+            successMessage.className = "success-message";
+            successMessage.textContent =
+              "Thank you for your order! We will contact you soon to confirm details and arrange payment.";
+            successMessage.style.padding = "15px";
+            successMessage.style.backgroundColor = "#4a7c59";
+            successMessage.style.color = "white";
+            successMessage.style.borderRadius = "5px";
+            successMessage.style.marginTop = "20px";
+
+            // Insert after form
+            birdhouseOrderForm.parentNode.insertBefore(
+              successMessage,
+              birdhouseOrderForm.nextSibling
+            );
+
+            // Reset form
+            birdhouseOrderForm.reset();
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+              successMessage.remove();
+            }, 5000);
+          });
+        }
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Show success message
+            const successMessage = document.createElement("div");
+            successMessage.className = "success-message";
+            successMessage.textContent =
+              "Thank you for your message! We will get back to you soon.";
+            successMessage.style.padding = "15px";
+            successMessage.style.backgroundColor = "#4a7c59";
+            successMessage.style.color = "white";
+            successMessage.style.borderRadius = "5px";
+            successMessage.style.marginTop = "20px";
+
+            // Insert after form
+            contactForm.parentNode.insertBefore(
+              successMessage,
+              contactForm.nextSibling
+            );
+
+            // Reset form
+            contactForm.reset();
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+              successMessage.remove();
+            }, 5000);
+          });
+        }
+
+        // Download form functionality
+        const downloadBtn = document.getElementById("downloadForm");
+        if (downloadBtn) {
+          downloadBtn.addEventListener("click", function () {
+            // Create a new window with the form content
+            const formContent = `
+                    <html>
+                    <head>
+                        <title>New England Birdhouses Order Form</title>
+                        <style>
+                            body { font-family: Arial, sans-serif; margin: 20px; }
+                            h1 { color: #4a7c59; }
+                            .form-group { margin-bottom: 15px; }
+                            label { display: block; font-weight: bold; margin-bottom: 5px; }
+                            input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ddd; }
+                            button { background-color: #4a7c59; color: white; padding: 10px 15px; border: none; cursor: pointer; margin-top: 20px; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>New England Birdhouses Order Form</h1>
+                        <p>Please fill out this form and email it to info@newenglandbirdhouses.com</p>
+                        
+                        <form id="printableForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="birdhouseSize">Birdhouse Size</label>
+                                <select id="birdhouseSize" name="birdhouseSize">
+                                    <option value="">Select a size</option>
+                                    <option value="small">Small - $45</option>
+                                    <option value="medium">Medium - $65</option>
+                                    <option value="large">Large - $85</option>
+                                    <option value="xlarge">Extra Large - $105</option>
+                                    <option value="deluxe">Deluxe - $135</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="specialRequests">Special Requests</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+                            </div>
+                        </form>
+                        
+                        <p>Once completed, please email this form to: info@newenglandbirdhouses.com</p>
+                        
+                        <button onclick="window.print()">Print Form</button>
+                    </body>
+                    </html>
+                `;
+
+            try {
+              const newWindow = window.open("", "_blank");
+              if (newWindow) {
+                newWindow.document.write(formContent);
+                newWindow.document.close();
+              } else {
+                // If popup is blocked, show a message
+                alert(
+                  "Please allow popups and try again to download the form."
+                );
+              }
+            } catch (error) {
+              console.error("Error opening form window:", error);
+              alert(
+                "An error occurred while trying to open the form. Please try again."
+              );
+            }
+          });
+        }
+
+        // Header scroll effect
+        const header = document.querySelector("header");
+        if (header) {
+          window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+              header.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+              header.style.padding = "5px 0";
+            } else {
+              header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+              header.style.padding = "15px 0";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
